@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(183, 211, 221);
+}
+
+.pagPrin{
+    height: 90%; 
+    margin: 20px;
+    padding: 10px 10px 10px 10px ;
+    display: grid;
+    grid-row-gap :25px;
+    grid-column-gap: 10px;
+    grid-template-rows: 0.5fr 0.5fr  ;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:"encabezado encabezado" 
+    "info info"
+    "formAcad formAcad"
+    "xplab xplab"
+    "aboutMe aboutMe";
+}
+.encabezado{
+    grid-area: encabezado;
+    text-align: center;
+
+}
+.info{
+    grid-area: info;
+    grid-column: 1;
+    border: 1px solid saddlebrown;
+
+}
+
+.formAcad{
+    grid-area: formAcad;
+    grid-column: 2;
+    text-align: right;
+    border: 1px solid saddlebrown;
+}
+
+.xplab{
+    grid-area: xplab;
+    grid-row: 4;
+    grid-column: 1;
+    border: 1px solid saddlebrown;
+
+}
+
+.aboutMe{
+    grid-area: aboutMe;
+    grid-column: 2;
+    text-align: right;
+    border: 1px solid saddlebrown;
+
+}
+
+.pie footer{
+    width: 100%;
+    height: 50px;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
